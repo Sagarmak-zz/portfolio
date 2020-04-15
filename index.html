@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sagar Makhija | Frontend Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::after,
+      *::before {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+
+      body {
+        min-height: 100vh;
+        min-width: 100%;
+        box-sizing: border-box;
+        background: #ccdaff;
+        color: #395DB8;
+        font-family: "Roboto", sans-serif;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .app {
+      }
+
+      /* navbar */
+      .app .navbar {
+        height: 4rem;
+        background: #bdd0ff;
+        display: flex;
+        align-items: center;
+      }
+      .app .navbar .item {
+        font-size: 1.7rem;
+        padding: 2rem;
+        text-transform: uppercase;
+      }
+
+      /* main */
+      .app .main {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .app .main .content {
+        font-size: 6.5rem;
+        padding-bottom: 0.5rem;
+      }
+      .app .main .content .unique {
+        font-size: 6.5rem;
+        padding: 0.7rem;
+        background: #395DB8;
+        color: #E5E5E5;
+      }
+      .app .main .description {
+        font-size: 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <div class="navbar">
+        <a class="item" href="/home">Home</a>
+        <a class="item" href="/about">About Me</a>
+        <a class="item" href="/portfolio">Portfolio</a>
+        <a class="item" href="/contact">Contact Me</a>
+      </div>
+      <div class="main">
+        <div class="content">
+            Hello, I'm <span class="unique">Sagar</span>.
+        </div>
+        <div class="description">
+            Frontend Developer
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

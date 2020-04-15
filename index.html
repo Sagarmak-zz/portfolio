@@ -18,73 +18,126 @@
         font-size: 14px;
       }
 
+      html {
+        overflow: scroll;
+        overflow-x: hidden;
+      }
+      ::-webkit-scrollbar {
+        width: 0px; 
+        background: transparent; 
+      }
+
       body {
         min-height: 100vh;
         min-width: 100%;
         box-sizing: border-box;
         background: #ccdaff;
-        color: #395DB8;
+        color: #395db8;
         font-family: "Roboto", sans-serif;
+        /* overflow: hidden; */
       }
 
       a {
         text-decoration: none;
       }
 
-      .app {
-      }
-
       /* navbar */
-      .app .navbar {
+      .navbar {
+        position: fixed;
+        width: 100%;
         height: 4rem;
         background: #bdd0ff;
         display: flex;
         align-items: center;
       }
-      .app .navbar .item {
+      .navbar .item {
         font-size: 1.7rem;
         padding: 2rem;
         text-transform: uppercase;
       }
 
-      /* main */
-      .app .main {
-        height: 60vh;
+      /* home */
+      .home {
+        height: 100vh;
+      }
+
+      .home .main {
+        height: 75vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
       }
-      .app .main .content {
+      .home .main .content {
         font-size: 6.5rem;
         padding-bottom: 0.5rem;
       }
-      .app .main .content .unique {
+      .home .main .content .unique {
         font-size: 6.5rem;
         padding: 0.7rem;
-        background: #395DB8;
-        color: #E5E5E5;
+        background: #395db8;
+        color: #e5e5e5;
       }
-      .app .main .description {
+      .home .main .description {
         font-size: 4rem;
+      }
+
+      /* about */
+      .about {
+        height: 100vh;
+      }
+      .about .main {
+        height: 100vh;
+        padding: 5rem;
+      }
+
+      /* portfolio */
+      .portfolio {
+        height: 100vh;
+      }
+      .portfolio .main {
+        height: 100vh;
+        padding: 5rem;
+      }
+
+      /* contact */
+      .contact {
+        height: 100vh;
+      }
+      .contact .main {
+        height: 100vh;
+        padding: 5rem;
       }
     </style>
   </head>
   <body>
-    <div class="app">
-      <div class="navbar">
-        <a class="item" href="/home">Home</a>
-        <a class="item" href="/about">About Me</a>
-        <a class="item" href="/portfolio">Portfolio</a>
-        <a class="item" href="/contact">Contact Me</a>
-      </div>
+    <div class="navbar">
+      <a class="item" href="#home">Home</a>
+      <a class="item" href="#about">About Me</a>
+      <a class="item" href="#portfolio">Portfolio</a>
+      <a class="item" href="#contact">Contact Me</a>
+    </div>
+    <div class="home" id="home">
       <div class="main">
-        <div class="content">
-            Hello, I'm <span class="unique">Sagar</span>.
-        </div>
+        <div class="content">Hello, I'm <span class="unique">Sagar</span>.</div>
         <div class="description">
-            Frontend Developer
+          Frontend Developer
         </div>
+      </div>
+    </div>
+    <div class="about" id="about">
+      <div class="main">
+        About Page
+      </div>
+    </div>
+    <div class="portfolio" id="portfolio">
+      <div class="main">
+        Portfolio Page
+      </div>
+    </div>
+    <div class="contact" id="contact">
+      <div class="main">
+        Contact Page
       </div>
     </div>
   </body>

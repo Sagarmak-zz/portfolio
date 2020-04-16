@@ -23,8 +23,8 @@
         overflow-x: hidden;
       }
       ::-webkit-scrollbar {
-        width: 0px; 
-        background: transparent; 
+        width: 0px;
+        background: transparent;
       }
 
       body {
@@ -88,25 +88,62 @@
       }
       .about .main {
         height: 100vh;
-        padding: 5rem;
+        padding: 6rem;
+      }
+      .about .main .image {
+        background-image: url(./assets/d.jpg);
+        height: 20rem;
+        width: 20rem;
+        margin: auto;
+        background-color: #BDD0FF;
+        background-blend-mode: luminosity;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .about .main .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .about .main .content .title {
+        font-size: 4rem;
+        margin: 0.5rem 0;
+      }
+      .about .main .content .subtitle {
+        font-size: 2.5rem;
+      }
+      .about .main .description {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 1.5rem;
       }
 
       /* portfolio */
       .portfolio {
         height: 100vh;
       }
-      .portfolio .main {
+      .portfolio .header {
         height: 100vh;
-        padding: 5rem;
+        padding: 6rem;
+        font-size: 4rem;
+        text-transform: lowercase;
+        text-decoration: underline;
+        text-align: center;
       }
 
       /* contact */
       .contact {
         height: 100vh;
       }
-      .contact .main {
+      .contact .header {
         height: 100vh;
-        padding: 5rem;
+        padding: 6rem;
+        font-size: 4rem;
+        text-transform: lowercase;
+        text-decoration: underline;
+        text-align: center;
       }
     </style>
   </head>
@@ -127,17 +164,27 @@
     </div>
     <div class="about" id="about">
       <div class="main">
-        About Page
+        <div class="image"></div>
+        <div class="content">
+          <div class="title">Sagar Makhija</div>
+          <div class="subtitle">an enthuisastic javascript developer</div>
+        </div>
+        <div class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae rerum
+          reiciendis harum inventore laudantium temporibus dicta, deleniti porro
+          neque nisi vero hic dolorem explicabo beatae maxime recusandae
+          cupiditate suscipit asperiores?
+        </div>
       </div>
     </div>
     <div class="portfolio" id="portfolio">
-      <div class="main">
-        Portfolio Page
+      <div class="header">
+        Portfolio
       </div>
     </div>
     <div class="contact" id="contact">
-      <div class="main">
-        Contact Page
+      <div class="header">
+        Contact
       </div>
     </div>
   </body>

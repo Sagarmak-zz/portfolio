@@ -51,6 +51,7 @@
       }
 
       a {
+        color: #395DB8;
         text-decoration: none;
       }
       a:focus {
@@ -63,13 +64,18 @@
         width: 100%;
         height: 4rem;
         background: #bdd0ff;
+        font-size: 1.5rem;
+
         display: flex;
+        justify-content: space-between;
         align-items: center;
       }
-      .navbar .item {
-        font-size: 1.5rem;
+      .navbar .left .item {
         padding: 2rem;
         text-transform: uppercase;
+      }
+      .navbar .right .icon {
+        padding: 1rem;
       }
 
       /* home */
@@ -166,15 +172,29 @@
       .contact .body .icons {
         display: flex;
         justify-content: space-around;
+        font-size: 5rem;
+      }
+      .contact .body .icons .icon {
+        padding: 1rem;
       }
     </style>
   </head>
   <body>
     <div class="navbar">
-      <a class="item" href="#home">Home</a>
-      <a class="item" href="#about">About Me</a>
-      <a class="item" href="#portfolio">Portfolio</a>
-      <a class="item" href="#contact">Contact Me</a>
+      <div class="left">
+        <a class="item" href="#home">Home</a>
+        <a class="item" href="#about">About Me</a>
+        <a class="item" href="#portfolio">Portfolio</a>
+        <a class="item" href="#contact">Contact Me</a>
+      </div>
+      <div class="right">
+        <a href="https://www.linkedin.com/in/sagarmak/" target="_blank" class="icon linkedin">
+          <i class="fas fa-file-alt"></i>
+        </a>
+        <a href="https://github.com/Sagarmak/" target="_blank" class="icon linkedin">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
     </div>
     <div class="home" id="home">
       <div class="main">
@@ -208,18 +228,18 @@
       </div>
       <div class="body">
         <div class="icons">
-          <div class="icon linkedin">
+          <a href="https://www.linkedin.com/in/sagarmak/" target="_blank" class="icon linkedin">
             <i class="fab fa-linkedin-in"></i>
-          </div>
-          <div class="icon mail">
+          </a>
+          <a href="mailto:sagar1309@live.com" target="_blank" class="icon mail">
             <i class="far fa-envelope"></i>
-          </div>
-          <div class="icon twitter">
+          </a>
+          <a href="https://twitter.com/Sagarmak" target="_blank" class="icon twitter">
             <i class="fab fa-twitter"></i>
-          </div>
-          <div class="icon telegram">
+          </a>
+          <a href="t.me/Sagarmak" target="_blank" class="icon telegram">
             <i class="fab fa-telegram-plane"></i>
-          </div>
+          </a>
         </div>
       </div>
     </div>

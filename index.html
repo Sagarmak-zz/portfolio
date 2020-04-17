@@ -51,7 +51,7 @@
       }
 
       a {
-        color: #395DB8;
+        color: #395db8;
         text-decoration: none;
       }
       a:focus {
@@ -92,7 +92,7 @@
       }
       .home .main .content {
         font-size: 6rem;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
       }
       .home .main .content .unique {
         font-size: 6rem;
@@ -101,7 +101,7 @@
         color: #e5e5e5;
       }
       .home .main .description {
-        font-size: 4rem;
+        font-size: 3.6rem;
       }
 
       /* about */
@@ -136,6 +136,8 @@
       .about .description {
         font-size: 1.5rem;
         text-align: center;
+        width: 95%;
+        margin: auto;
         margin-top: 1.5rem;
       }
 
@@ -149,6 +151,15 @@
         text-transform: lowercase;
         text-decoration: underline;
         text-align: center;
+      }
+      .portfolio .description {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        text-align: center;
+        font-style: italic;
+      }
+      .portfolio .description .unique {
+        text-decoration: underline;
       }
 
       /* contact */
@@ -177,6 +188,44 @@
       .contact .body .icons .icon {
         padding: 1rem;
       }
+
+      .tooltip {
+        position: relative;
+        display: inline-block;
+      }
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 8rem;
+        background: #395db8;
+        text-align: center;
+        color: #bdd0ff;
+        padding: 1rem;
+        border-radius: 5%;
+
+        /* visibility: hidden; */
+        position: absolute;
+        z-index: 1;
+        right: 150%;
+        top: -64%;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 40%;
+        left: 103%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent transparent #395db8;
+      }
+
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
     </style>
   </head>
   <body>
@@ -188,11 +237,21 @@
         <a class="item" href="#contact">Contact Me</a>
       </div>
       <div class="right">
-        <a href="https://www.linkedin.com/in/sagarmak/" target="_blank" class="icon linkedin">
-          <i class="fas fa-file-alt"></i>
+        <a
+          href="https://docs.google.com/document/d/1BHvPZv6u53zuOnieV56h5fVve0PFxxSC0YZX5-suSTA/edit?usp=sharing"
+          target="_blank"
+          class="icon tooltip"
+        >
+          <span class="tooltip">
+            <i class="fas fa-file-alt"></i>
+            <span class="tooltiptext">Resume</span>
+          </span>
         </a>
-        <a href="https://github.com/Sagarmak/" target="_blank" class="icon linkedin">
-          <i class="fab fa-github"></i>
+        <a href="https://github.com/Sagarmak/" target="_blank" class="icon">
+          <span class="tooltip">
+            <i class="fab fa-github"></i>
+            <span class="tooltiptext">Github</span>
+          </span>
         </a>
       </div>
     </div>
@@ -200,7 +259,7 @@
       <div class="main">
         <div class="content">Hello, I'm <span class="unique">Sagar</span>.</div>
         <div class="description">
-          Frontend Developer
+          and I'm a Frontend Developer
         </div>
       </div>
     </div>
@@ -211,15 +270,19 @@
         <div class="subtitle">an enthuisastic javascript developer</div>
       </div>
       <div class="description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae rerum
-        reiciendis harum inventore laudantium temporibus dicta, deleniti porro
-        neque nisi vero hic dolorem explicabo beatae maxime recusandae
-        cupiditate suscipit asperiores?
+        I'm a frontend developer based out of Ahmedabad and Banglore. I've been
+        developing apps since 2 years mainly in javascript and other cutting
+        edge technologies. I also design my own websites for small/side
+        projects.
       </div>
     </div>
     <div class="portfolio" id="portfolio">
       <div class="header">
         Portfolio
+      </div>
+      <div class="description">
+        let's wait till <span class="unique">Sagar</span> fills up the
+        content...
       </div>
     </div>
     <div class="contact" id="contact">
@@ -228,16 +291,24 @@
       </div>
       <div class="body">
         <div class="icons">
-          <a href="https://www.linkedin.com/in/sagarmak/" target="_blank" class="icon linkedin">
+          <a
+            href="https://www.linkedin.com/in/sagarmak/"
+            target="_blank"
+            class="icon linkedin"
+          >
             <i class="fab fa-linkedin-in"></i>
           </a>
           <a href="mailto:sagar1309@live.com" target="_blank" class="icon mail">
             <i class="far fa-envelope"></i>
           </a>
-          <a href="https://twitter.com/Sagarmak" target="_blank" class="icon twitter">
+          <a
+            href="https://twitter.com/Sagarmak"
+            target="_blank"
+            class="icon twitter"
+          >
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="t.me/Sagarmak" target="_blank" class="icon telegram">
+          <a href="https://t.me/Sagarmak" target="_blank" class="icon telegram">
             <i class="fab fa-telegram-plane"></i>
           </a>
         </div>

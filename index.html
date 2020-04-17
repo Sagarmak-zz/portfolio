@@ -8,14 +8,27 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-16x16.png"
+    />
     <style>
       *,
       *::after,
       *::before {
-        padding: 0;
         margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
         box-sizing: border-box;
-        font-size: 14px;
       }
 
       html {
@@ -34,11 +47,14 @@
         background: #ccdaff;
         color: #395db8;
         font-family: "Roboto", sans-serif;
-        /* overflow: hidden; */
+        line-height: 1;
       }
 
       a {
         text-decoration: none;
+      }
+      a:focus {
+        color: inherit;
       }
 
       /* navbar */
@@ -51,7 +67,7 @@
         align-items: center;
       }
       .navbar .item {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         padding: 2rem;
         text-transform: uppercase;
       }
@@ -62,18 +78,18 @@
       }
 
       .home .main {
-        height: 75vh;
+        height: 80vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
       }
       .home .main .content {
-        font-size: 6.5rem;
-        padding-bottom: 0.5rem;
+        font-size: 6rem;
+        padding-bottom: 1rem;
       }
       .home .main .content .unique {
-        font-size: 6.5rem;
+        font-size: 6rem;
         padding: 0.7rem;
         background: #395db8;
         color: #e5e5e5;
@@ -85,36 +101,33 @@
       /* about */
       .about {
         height: 100vh;
-      }
-      .about .main {
-        height: 100vh;
         padding: 6rem;
       }
-      .about .main .image {
+      .about .image {
         background-image: url(./assets/d.jpg);
-        height: 20rem;
-        width: 20rem;
+        height: 17rem;
+        width: 17rem;
         margin: auto;
-        background-color: #BDD0FF;
+        background-color: #bdd0ff;
         background-blend-mode: luminosity;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
         border-radius: 50%;
         background-repeat: no-repeat;
         background-size: 100%;
       }
-      .about .main .content {
+      .about .content {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
-      .about .main .content .title {
-        font-size: 4rem;
+      .about .content .title {
+        font-size: 3rem;
         margin: 0.5rem 0;
       }
-      .about .main .content .subtitle {
-        font-size: 2.5rem;
+      .about .content .subtitle {
+        font-size: 2rem;
       }
-      .about .main .description {
+      .about .description {
         font-size: 1.5rem;
         text-align: center;
         margin-top: 1.5rem;
@@ -123,10 +136,9 @@
       /* portfolio */
       .portfolio {
         height: 100vh;
+        padding: 6rem;
       }
       .portfolio .header {
-        height: 100vh;
-        padding: 6rem;
         font-size: 4rem;
         text-transform: lowercase;
         text-decoration: underline;
@@ -136,14 +148,24 @@
       /* contact */
       .contact {
         height: 100vh;
+        padding: 6rem;
       }
       .contact .header {
-        height: 100vh;
-        padding: 6rem;
         font-size: 4rem;
         text-transform: lowercase;
         text-decoration: underline;
         text-align: center;
+        margin-bottom: 2rem;
+      }
+      .contact .body {
+        background: #bdd0ff;
+        height: 7rem;
+        width: 38rem;
+        margin: auto;
+      }
+      .contact .body .icons {
+        display: flex;
+        justify-content: space-around;
       }
     </style>
   </head>
@@ -163,18 +185,16 @@
       </div>
     </div>
     <div class="about" id="about">
-      <div class="main">
-        <div class="image"></div>
-        <div class="content">
-          <div class="title">Sagar Makhija</div>
-          <div class="subtitle">an enthuisastic javascript developer</div>
-        </div>
-        <div class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae rerum
-          reiciendis harum inventore laudantium temporibus dicta, deleniti porro
-          neque nisi vero hic dolorem explicabo beatae maxime recusandae
-          cupiditate suscipit asperiores?
-        </div>
+      <div class="image"></div>
+      <div class="content">
+        <div class="title">Sagar Makhija</div>
+        <div class="subtitle">an enthuisastic javascript developer</div>
+      </div>
+      <div class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae rerum
+        reiciendis harum inventore laudantium temporibus dicta, deleniti porro
+        neque nisi vero hic dolorem explicabo beatae maxime recusandae
+        cupiditate suscipit asperiores?
       </div>
     </div>
     <div class="portfolio" id="portfolio">
@@ -185,6 +205,22 @@
     <div class="contact" id="contact">
       <div class="header">
         Contact
+      </div>
+      <div class="body">
+        <div class="icons">
+          <div class="icon linkedin">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+          <div class="icon mail">
+            <i class="far fa-envelope"></i>
+          </div>
+          <div class="icon twitter">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="icon telegram">
+            <i class="fab fa-telegram-plane"></i>
+          </div>
+        </div>
       </div>
     </div>
   </body>

@@ -154,15 +154,16 @@ a:focus {
   margin-bottom: 2rem;
 }
 .contact .body {
-  background: #bdd0ff;
-  height: 7rem;
-  width: 38rem;
-  margin: auto;
+  /*  */
 }
 .contact .body .icons {
-  display: flex;
-  justify-content: space-around;
+  background: #bdd0ff;
   font-size: 5rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .contact .body .icons .icon {
   padding: 1rem;

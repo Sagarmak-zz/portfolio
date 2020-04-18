@@ -293,6 +293,10 @@ a:focus {
     font-size: 1.5rem;
   }
   .about .main .description {
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .portfolio .main {
+    height: 47vh;
   }
 }

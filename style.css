@@ -41,7 +41,7 @@ a:focus {
 .navbar {
   position: fixed;
   width: 100%;
-  height: 4rem;
+  height: 9vh;
   background: #bdd0ff;
   font-size: 1.5rem;
 
@@ -64,6 +64,7 @@ a:focus {
 
 .home .main {
   height: 80vh;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -204,4 +205,13 @@ a:focus {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+@media (max-width: 708px) {
+  .home .main {
+    height: 100vh;
+  }
+  .home .main .content {
+    line-height: 1.3;
+  }
 }

@@ -299,4 +299,10 @@ a:focus {
   .portfolio .main {
     height: 47vh;
   }
+
+  .contact .body .icons .icon {
+    text-align: center;
+    flex: 1 1 50%;
+    padding: 0.5rem;
+  }
 }

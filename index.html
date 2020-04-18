@@ -22,29 +22,30 @@
   </head>
   <body>
     <div class="navbar">
-      <div class="left">
-        <a class="item" href="#home">Home</a>
-        <a class="item" href="#about">About Me</a>
-        <a class="item" href="#portfolio">Portfolio</a>
-        <a class="item" href="#contact">Contact Me</a>
-      </div>
-      <div class="right">
-        <a
-          href="https://docs.google.com/document/d/1BHvPZv6u53zuOnieV56h5fVve0PFxxSC0YZX5-suSTA/edit?usp=sharing"
-          target="_blank"
-          class="icon tooltip"
-        >
-          <span class="tooltip">
-            <i class="fas fa-file-alt"></i>
-            <span class="tooltiptext">Resume</span>
-          </span>
-        </a>
-        <a href="https://github.com/Sagarmak/" target="_blank" class="icon">
-          <span class="tooltip">
-            <i class="fab fa-github"></i>
-            <span class="tooltiptext">Github</span>
-          </span>
-        </a>
+      <a href="#" class="toggleNav"><i class="fas fa-bars"></i> &nbsp; Menu</a>
+      <div class="flex-wrapper">
+        <a class="flex-child" href="#home">Home</a>
+        <a class="flex-child" href="#about">About</a>
+        <a class="flex-child" href="#portfolio">Portfolio</a>
+        <a class="flex-child" href="#contact">Contact</a>
+        <div class="right flex-child">
+          <a
+            href="https://docs.google.com/document/d/1BHvPZv6u53zuOnieV56h5fVve0PFxxSC0YZX5-suSTA/edit?usp=sharing"
+            target="_blank"
+            class="icon tooltip"
+          >
+            <span class="tooltip">
+              <i class="fas fa-file-alt"></i>
+              <span class="tooltiptext">Resume</span>
+            </span>
+          </a>
+          <a href="https://github.com/Sagarmak/" target="_blank" class="icon">
+            <span class="tooltip">
+              <i class="fab fa-github"></i>
+              <span class="tooltiptext">Github</span>
+            </span>
+          </a>
+        </div>
       </div>
     </div>
     <div class="home" id="home">
@@ -111,5 +112,13 @@
         </div>
       </div>
     </div>
+    <script type="text/javascript">
+      let navMenu = document.querySelector(".toggleNav");
+      navMenu.addEventListener("click", toggleNav);
+      function toggleNav() {
+        let navParent = document.querySelector(".navbar .flex-wrapper");
+        navParent.classList.toggle("open");
+      }
+    </script>
   </body>
 </html>

@@ -44,17 +44,64 @@ a:focus {
   height: 9vh;
   background: #bdd0ff;
   font-size: 1.5rem;
-
+}
+.navbar .toggleNav {
+  display: none;
+}
+.navbar .flex-wrapper {
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.navbar .left .item {
+
+.navbar .flex-wrapper .flex-child {
   padding: 2rem;
   text-transform: uppercase;
 }
-.navbar .right .icon {
+.navbar .flex-wrapper .right {
+  padding: 0;
+  flex: 1;
+  text-align: end;
+}
+.navbar .flex-wrapper .right .icon {
   padding: 1rem;
+}
+
+@media all and (max-width: 750px) {
+  .navbar {
+    text-align: center;
+  }
+  .navbar .toggleNav {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar .flex-wrapper {
+    display: none;
+    height: auto;
+    flex-wrap: wrap;
+    background-color: #bdd0ff;
+  }
+  .navbar .flex-wrapper.open {
+    display: flex;
+    border: solid 1px #395db8;
+  }
+  .navbar .flex-wrapper .flex-child {
+    padding: 1rem;
+    flex: 1 1 50%;
+  }
+  .navbar .flex-wrapper .right {
+    text-align: center;
+    padding: 0;
+  }
+}
+@media all and (max-width: 550px) {
+  .navbar .flex-wrapper .flex-child {
+    padding: 1rem;
+    flex: 1 1 100%;
+  }
 }
 
 /* home */

@@ -120,6 +120,15 @@
         let navParent = document.querySelector(".navbar .flex-wrapper");
         navParent.classList.toggle("open");
       }
+
+      let flexWrapper = document.querySelector(".navbar .flex-wrapper");
+      flexWrapper.addEventListener("click", closeMenu);
+      function closeMenu() {
+        if (flexWrapper.classList.contains('open')) {
+          flexWrapper.classList.remove('open');
+        }
+      }
+
     </script>
   </body>
 </html>

@@ -235,6 +235,10 @@ a:focus {
 .contact .body .icons .icon {
   padding: 1rem;
 }
+.contact .body .icons .icon:hover {
+  color: #ccdaff;
+  background: #395db8;
+}
 
 .tooltip {
   position: relative;

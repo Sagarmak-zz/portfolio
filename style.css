@@ -239,6 +239,7 @@ a:focus {
   color: #ccdaff;
   background: #395db8;
   transition: all 0.2s ease 0s;
+  box-shadow: 5px 5px 7px -5px rgba(0,0,0,0.53);
 }
 
 .tooltip {

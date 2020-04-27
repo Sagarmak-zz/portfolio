@@ -10,13 +10,21 @@
   box-sizing: border-box;
 }
 
-html {
-  overflow: scroll;
-  overflow-x: hidden;
+/* Disable scrollbar Firefox */
+@-moz-document url-prefix() { 
+  html{
+    scrollbar-width: none;
+  }
 }
+/* Disable scrollbar Chrome */
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 body {
